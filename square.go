@@ -1,5 +1,6 @@
 package square
 
+
 type Point struct {
 	x, y int
 }
@@ -13,7 +14,7 @@ func (s *Square) End() Point {
 	// implement me
 	newP := Point{
 		x: s.start.x + int(s.a),
-		y: s.start.y - int(s.a),
+		y: s.start.y + int(s.a),
 	}
 	return newP
 }
